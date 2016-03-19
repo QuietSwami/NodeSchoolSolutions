@@ -1,0 +1,3 @@
+var pizza = 'pizza is alright';
+pizza.replace('wonderful', 'alright');
+console.log(pizza);
