@@ -1,0 +1,28 @@
+{
+  "name": "stream-adventure",
+  "version": "1.0.0",
+  "description": "The solutions for Stream Adventures from nodeschool",
+  "main": "program.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuietSwami/NodeSchoolSolutions.git"
+  },
+  "keywords": [
+    "nodeschool",
+    "nodejs"
+  ],
+  "author": "Francisco Mendonça",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuietSwami/NodeSchoolSolutions/issues"
+  },
+  "homepage": "https://github.com/QuietSwami/NodeSchoolSolutions#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "split": "^1.0.0",
+    "through2": "^2.0.1"
+  }
+}
