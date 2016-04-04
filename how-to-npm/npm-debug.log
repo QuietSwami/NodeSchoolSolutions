@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'adduser' ]
+2 info using npm@3.8.5
+3 info using node@v5.8.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:swami',
+4 verbose adduser   name: 'swami',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'fran.abm94@gmail.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-04-04T16:20:01.549Z' }
+5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:swami
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 5:20:01 PM
+8 verbose request id 6204cbbc7a09dab0
+9 http request PUT http://localhost:15443/-/user/org.couchdb.user:swami
+10 http 404 http://localhost:15443/-/user/org.couchdb.user:swami
+11 verbose headers { 'content-type': 'application/json',
+11 verbose headers   date: 'Mon, 04 Apr 2016 16:20:01 GMT',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'content-length': '19' }
+12 verbose request invalidating /home/quietswami/.npm/localhost_15443/-/user/org.couchdb.user_3Aswami on PUT
+13 verbose adduser back [ { [Error: missing : -/user/org.couchdb.user:swami] statusCode: 404, code: 'E404' },
+13 verbose adduser   { error: 'missing' },
+13 verbose adduser   '{"error":"missing"}' ]
+14 verbose stack Error: missing : -/user/org.couchdb.user:swami
+14 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+14 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+14 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+14 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at Request.emit (events.js:185:7)
+14 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+14 verbose stack     at emitOne (events.js:95:20)
+14 verbose stack     at Request.emit (events.js:182:7)
+14 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+15 verbose statusCode 404
+16 verbose cwd /home/quietswami/NodeSchoolSolutions/how-to-npm
+17 error Linux 4.2.0-34-generic
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "adduser"
+19 error node v5.8.0
+20 error npm  v3.8.5
+21 error code E404
+22 error 404 missing : -/user/org.couchdb.user:swami
+23 verbose exit [ 1, true ]
